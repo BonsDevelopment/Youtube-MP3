@@ -1,0 +1,5 @@
+C:\Users\Bon\Documents\Visual Studio 2013\Projects\Youtube-MP3\Youtube-MP3\bin\Debug\Youtube-MP3.dll
+C:\Users\Bon\Documents\Visual Studio 2013\Projects\Youtube-MP3\Youtube-MP3\bin\Debug\Youtube-MP3.pdb
+C:\Users\Bon\Documents\Visual Studio 2013\Projects\Youtube-MP3\Youtube-MP3\obj\Debug\Youtube-MP3.csprojResolveAssemblyReference.cache
+C:\Users\Bon\Documents\Visual Studio 2013\Projects\Youtube-MP3\Youtube-MP3\obj\Debug\Youtube-MP3.dll
+C:\Users\Bon\Documents\Visual Studio 2013\Projects\Youtube-MP3\Youtube-MP3\obj\Debug\Youtube-MP3.pdb
