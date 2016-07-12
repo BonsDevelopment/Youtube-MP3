@@ -58,7 +58,23 @@ namespace Youtube_MP3.Downloader
 
         private void webClient_DownloadChanged(object sender, DownloadProgressChangedEventArgs e)
         {
-            Percentage.GetPercent = e.ProgressPercentage + "%";
+            int bytesIn, totalBytes;
+
+            if (!Int32.TryParse(e.BytesReceived.ToString(), out bytesIn) ||
+                !Int32.TryParse(e.TotalBytesToReceive.ToString(), out totalBytes)) { return; }
+
+
+            int mb_in = (bytesIn / 1024) / 1024;
+            int mb_total = (totalBytes / 1024) / 1024;
+
+            int kb_in = bytesIn / 1024;
+            int kb_total = totalBytes / 1024;
+
+            KB.GetKB = kb_in;
+            KB.GetKBTotal = kb_total;
+            //Console.WriteLine(mb_in + "mb / " + mb_total + "mb");
+
+            Percentage.GetPercent = e.ProgressPercentage;
         }
     }
 

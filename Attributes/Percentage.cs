@@ -8,6 +8,18 @@ namespace Youtube_MP3.Attributes
 {
     public class Percentage
     {
-        public static string GetPercent { get; set; }
+        private static int internalPercent = 0;
+        public static int GetPercent {
+
+            get
+            {
+                return internalPercent;
+            }
+
+            set
+            {
+                internalPercent = value;
+            } 
+        }
     }
 }

@@ -8,6 +8,7 @@ using Youtube_MP3.Elements;
 using Youtube_MP3.Attributes;
 using Youtube_MP3.Downloader;
 using System.IO;
+using System.Threading;
 
 namespace Youtube_MP3
 {
@@ -34,10 +35,21 @@ namespace Youtube_MP3
             
         }
 
-        public string GetPercentage()
+        public int GetPercentage()
         {
             return Percentage.GetPercent;
         }
+
+        public int GetKB()
+        {
+            return KB.GetKB;
+        }
+
+        public int GetKBTotal()
+        {
+            return KB.GetKBTotal;
+        }
+
 
         public string GetLength()
         {
@@ -50,7 +62,7 @@ namespace Youtube_MP3
 
         public static string YouTubeSearch(string VideoName)
         {
-            return SearchData.YTPostData(VideoName);
+           return SearchData.YTPostData(VideoName);
         }
     }
 }
